@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home | Adventure Trails Hikes</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is the home page for Adventure Trails Hikes, a business offering extreme hiking" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caramel&family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Qwitcher+Grypen&family=Roboto:wght@100;300;400&family=Tai+Heritage+Pro&family=Ysabeau:ital@1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/a2e814cf6f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="topHeader">
+      <div class="container">
+        <div class="logo-container">
+          <a href="index.html">
+            <div class="logo-name">
+              <p>Adventure</p>
+              <p>Trails</p>
+              <p>Hikes</p>
+            </div>
+            <div class="compass">
+              <i class="far fa-compass fa-3x"></i>
+            </div>
+          </a>
+        </div>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="hamburger" title="Menu">
+          <div class="first"></div>
+          <div class="second"></div>
+          <div class="third"></div>
+        </label>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="nav_link" id="active" href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <input type="checkbox" id="dropdown-toggle" />
+              <label for="dropdown-toggle" class="nav_link label-dropdown">TOURS ▼</label>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="nav_link">Short hikes</a></li>
+                <li><a href="#" class="nav_link">Camping hikes</a></li>
+                <li><a href="#" class="nav_link">Long hikes</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="nav_link" href="">about us</a>
+            </li>
+            <li>
+              <a class="nav_link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- about us section -->
+    <div class="about-us">
+      <div class="about-img">
+        <img src="./images/about.jpg" alt="Tour with a group going through beautiful mountains and nature">
+      </div>
+      <div>
+        <h1>Adventure Trails Hikes</h1>
+        <p>- Fulfil your wanderlust</p>
+        <div class="paragraf-text">
+          <p>Welcome to Adventure Trails Hikes! We aim to offer the most exciting, challenging, educational, and
+            cultural
+            extreme hikes, in exhilarating locations around the globe. We have a variety of standard packages, as well
+            as
+            offering specialized tours that will cater to your specific requirements.</p>
+          <div class="btn-about-us">
+            <button>
+              About us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tour section -->
+    <div class="tours">
+      <h2>
+        Our Hiking Tours
+      </h2>
+
+      <div class="cards">
+
+        <div class="hikes">
+          <h3>Short hikes</h3>
+          <a class="card-img">
+            <img src="./images/short-hikes.jpg" alt="">
+          </a>
+          <p>Our short hikes are perfect for weekend getaways or teambuilding trips. Normally these are day trips from a
+            local base, and do not require camping equipment.</p>
+          <a href="" class="btn-view">
+            <div class="btn-view">
+              <p class="link-p">vIEW Our Camping hikes</p>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="hikes">
+          <h3>Camping hikes</h3>
+          <a class="card-img">
+            <img src="./images/camping.jpg" alt="">
+          </a>
+          <p>Camping hikes are longer than short hikes and include 3 or more nights camping. You may bring your own
+            camping equipment, or we can supply it for you.</p>
+          <a href="" class="btn-view">
+            <div class="btn-view">
+              <p class="link-p">vIEW Our Camping hikes</p>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer_links">
+      <a class="footer_link" id="active" href="posts.html">Home</a>
+      <a class="footer_link" href="favorite.html">Shorts hikes</a>
+      <a class="footer_link" href="about.html">Camping</a>
+      <a class="footer_link" href="contact.html">Long hikes</a>
+      <a class="footer_link" href="contact.html">About us</a>
+      <a class="footer_link" href="contact.html">Contact</a>
+    </div>
+    <div class="social-links">
+      <a title="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+      <a title="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a title="facebook" href="https://nb-no.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a title="youtube" href="https://www.youtube.com/"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="copiright-footer">Copyright © 2023 • Adventure Trails Hikes.</div>
+  </footer>
+</body>
+
+</html>
