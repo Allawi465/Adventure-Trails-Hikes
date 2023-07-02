@@ -55,21 +55,21 @@ header {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  line-height: 19px;
+  font-size: 15px;
 }
 
 .logo-name p:first-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .logo-name p:not(:first-child) {
   margin: 0;
-  padding-left: 50px;
+  padding-left: 50px !important;
 }
 
 .logo-name p:last-child {
   margin-bottom: 0;
-  padding-left: 72px;
+  padding-left: 70px !important;
 }
 
 nav {
@@ -92,7 +92,7 @@ nav ul {
 nav li {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin: 20px;
 }
 
 .nav_link {
@@ -116,8 +116,7 @@ nav li {
   color: #45454b;
 }
 
-#toggle,
-#dropdown-toggle {
+#toggle {
   display: none;
 }
 
@@ -157,40 +156,11 @@ nav li {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* dropdown style  */
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.dropdown:hover .dropdown-menu,
-#dropdown-toggle:checked ~ .dropdown-menu {
-  display: block;
-}
-
-.label-dropdown {
-  cursor: pointer;
-}
-
-.label-dropdown::after {
-  content: '▼';
-  color: #053d57; /* Set the desired color */
-}
-
-.dropdown-menu {
-  display: none;
-  padding: 0;
-  margin: 0;
-}
-
 /* main style  */
 
 main {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   padding: 1rem;
-  min-height: 73vh;
 }
 
 /* about us section style  */
@@ -217,31 +187,25 @@ main {
   max-width: 632px;
 }
 
-.btn-about-us button {
-  margin: auto;
-  max-width: 100%;
-}
-
-.btn-about-us button {
+.btn-about-us {
   background: #364f34;
   padding: 0.375rem 0.75rem;
   color: #ffffff;
   border: 1px solid transparent;
-  text-decoration: none;
-  line-height: 1.5;
   display: flex;
   border-radius: 0.25rem;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  width: 243px;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  margin: auto;
+  display: block;
+  width: 248px;
 }
 
-.btn-about-us button:hover {
+.btn-about-us:hover {
   border: 1px solid #364f34;
   background: transparent;
   color: #364f34;
@@ -302,7 +266,8 @@ main {
   cursor: pointer;
 }
 
-.btn-view i {
+.long-tours:hover .btn-view i,
+.hikes:hover .btn-view i {
   color: #364f34;
 }
 
@@ -347,6 +312,92 @@ main {
 
 .long-hikes {
   margin: auto;
+}
+
+/* contact-us style  */
+
+.contact-us {
+  max-width: 1500px;
+  margin: 60px auto;
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.container-box {
+  display: flex;
+  gap: 50px;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.rectangle-card {
+  width: 100%;
+}
+
+.rectangle-card h6,
+.rectangle-card p {
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle-card h6 {
+  margin-top: 60px;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.rectangle-svg {
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle-1 {
+  width: 180px;
+  height: 180px;
+  transform: rotate(-50deg);
+  flex-shrink: 0;
+  background: #99422c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.rectangle-2 {
+  width: 180px;
+  height: 180px;
+  background: #9ac2e5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle-3 {
+  width: 180px;
+  height: 180px;
+  border-radius: 140px 140px 20px 20px;
+  background: #364f34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle-4 {
+  width: 180px;
+  height: 180px;
+  border-radius: 0px 65px 65px 65px;
+  background: #ffe8c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer style  */
@@ -415,7 +466,7 @@ footer {
 
   nav ul {
     display: flex;
-    gap: 20px;
+    gap: 38px;
     flex-wrap: wrap;
     padding-left: unset;
     width: unset;
@@ -424,6 +475,10 @@ footer {
 
   nav li:last-child {
     padding-right: 25px;
+  }
+
+  nav li {
+    margin: unset;
   }
 
   .nav-link {
@@ -450,6 +505,7 @@ footer {
 
   .about-us {
     flex-wrap: nowrap;
+    margin: 60px auto;
   }
 
   .cards {
@@ -461,15 +517,34 @@ footer {
     padding-left: 11px;
   }
 
-  /* dropdown nav style  */
+  /* contact-us style  */
 
-  .dropdown-menu {
-    position: absolute;
-    top: 70%;
-    left: -15px;
-    background: #ffe8c6;
-    width: 175px;
-    padding-left: 1rem;
-    border-radius: 0px 0px 6px 6px;
+  .rectangle-card {
+    max-width: 280px;
+  }
+
+  .rectangle-svg {
+    display: flex;
+    justify-content: start;
+  }
+
+  .container-box {
+    justify-content: center;
+  }
+
+  .rectangle-card h6,
+  .rectangle-card p {
+    display: flex;
+    justify-content: start;
+  }
+
+  .contact-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn-about-us {
+    width: 100%;
   }
 }
