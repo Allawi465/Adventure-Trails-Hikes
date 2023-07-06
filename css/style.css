@@ -5,7 +5,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   height: 100%;
 }
 
@@ -115,7 +114,7 @@ nav li {
 
 #active,
 #active-footer {
-  font-weight: bolder;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -173,7 +172,8 @@ main {
 }
 
 .contact-main {
-  padding: unset;
+  padding-left: unset;
+  padding-right: unset;
 }
 
 /* about us section style  */
@@ -183,10 +183,7 @@ main {
   margin: 30px auto;
 }
 
-.about-container h1,
-.about-container h2,
-.about-title,
-.contact-container h1 {
+.center {
   text-align: center;
 }
 
@@ -200,7 +197,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .card-about {
@@ -223,9 +220,7 @@ main {
   gap: 10px;
 }
 
-.about-us h1,
-.form-container h1,
-.about-container h1 {
+.weight-400 {
   font-weight: 400;
 }
 
@@ -256,7 +251,8 @@ main {
   width: 248px;
 }
 
-.btn-about-us:hover {
+.btn-about-us:hover,
+.action-btn a:hover {
   border: 1px solid #364f34;
   background: transparent;
   color: #364f34;
@@ -272,11 +268,94 @@ main {
   object-fit: cover;
 }
 
+.underline-span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-link {
+  color: #000000;
+}
+
 /* tours section style  */
+
+.tours-card {
+  max-width: 1320px;
+  margin: 30px auto;
+}
+
+.tours-card h1 {
+  margin-bottom: 30px;
+}
+
+.tours-card h2 {
+  margin-bottom: 0px;
+}
+
+.cards-hikes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.tours-card-container,
+.short-long-hikes {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tours-long-hikes,
+.short-long-hikes {
+  margin-top: 100px;
+}
+
+.tours-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-btn {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+}
+
+.action-btn a {
+  background: #000;
+  width: 100%;
+  text-align: center;
+  background: #364f34;
+  padding: 0.375rem 0.75rem;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.img-tour {
+  max-width: 100%;
+  height: 370px;
+}
+
+.img-tour img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .tours {
   max-width: 1150px;
-  margin: 20px auto;
+  margin: 30px auto;
   text-align: center;
 }
 
@@ -406,6 +485,14 @@ form {
   cursor: pointer;
   margin-bottom: 10px;
   text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.submit:hover {
+  border: 1px solid #ffff;
+  background: transparent;
+  color: rgb(0, 0, 0);
 }
 
 .contact-container {
@@ -413,6 +500,7 @@ form {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: unset;
 }
 
 .form-container {
@@ -434,7 +522,7 @@ form {
 
 .contact-us {
   max-width: 100%;
-  margin: 60px auto;
+  margin: 20px auto;
 }
 
 .contact-title {
@@ -481,17 +569,16 @@ form {
   width: 180px;
   height: 180px;
   transform: rotate(-50deg);
-  background: #99422c;
+  background: #753120;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
 }
 
 .rectangle-2 {
   width: 180px;
   height: 180px;
-  background: #9ac2e5;
+  background: #475b6d;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -512,7 +599,7 @@ form {
   width: 180px;
   height: 180px;
   border-radius: 0px 65px 65px 65px;
-  background: #ffe8c6;
+  background: #615849;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -554,21 +641,28 @@ footer {
   color: #3b3b40;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .social-links a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
+  height: 50px;
+  border-radius: 50%;
   background-color: #053d57;
   margin: 0 5px 5px 0;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
   color: #ffffff;
   margin-bottom: 25px;
-  align-items: center;
+  text-decoration: none;
 }
 
 .social-links i {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .copiright-footer {
@@ -661,7 +755,7 @@ footer {
 
   .contact-img {
     max-width: 500px;
-    height: 571px;
+    height: 550px;
   }
 
   .contact-img img {
@@ -671,7 +765,6 @@ footer {
   }
 
   .contact-container {
-    margin: 60px 0px 0px 0px auto;
     max-width: 1500px;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -687,6 +780,10 @@ footer {
 
   .contact-title {
     text-align: center;
+  }
+
+  .cards-hikes {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
