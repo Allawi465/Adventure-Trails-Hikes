@@ -4,7 +4,13 @@
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -163,18 +169,24 @@ nav li {
 main {
   margin-bottom: 60px;
   padding: 1rem;
-  min-height: 66vh !important;
+  flex: 1;
+}
+
+.contact-main {
+  padding: unset;
 }
 
 /* about us section style  */
 
 .about-container {
   max-width: 1500px;
-  margin: 60px auto;
+  margin: 30px auto;
 }
 
 .about-container h1,
-.about-container h2 {
+.about-container h2,
+.about-title,
+.contact-container h1 {
   text-align: center;
 }
 
@@ -187,7 +199,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
   margin-top: 100px;
 }
 
@@ -199,10 +211,6 @@ main {
 .svg-about {
   max-width: 100%;
   height: 75px;
-}
-
-.about-title {
-  text-align: center;
 }
 
 .about-us {
@@ -376,12 +384,15 @@ main {
 form {
   max-width: 436px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .continue {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .submit {
@@ -398,7 +409,7 @@ form {
 }
 
 .contact-container {
-  margin: auto;
+  margin: 30px auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -408,21 +419,17 @@ form {
   border: 8px solid rgba(229, 229, 229, 0.54);
   background: #e5e5e5;
   width: 100%;
-  margin-top: 30px;
 }
 
 .contact-img {
   max-width: 100%;
+  height: 490px;
 }
 
 .contact-img img {
   max-width: 100%;
   object-fit: cover;
   height: 100%;
-}
-
-.contact-container h1 {
-  text-align: center;
 }
 
 .contact-us {
@@ -571,6 +578,9 @@ footer {
 }
 
 @media screen and (min-width: 620px) {
+  .contact-main {
+    padding: 1rem;
+  }
   /* Header style  */
   nav {
     display: flex;
@@ -637,6 +647,10 @@ footer {
 
   /* contact-us style  */
 
+  .continue {
+    margin-bottom: unset;
+  }
+
   .form-container {
     width: 550px !important;
     margin-top: unset;
@@ -647,17 +661,17 @@ footer {
 
   .contact-img {
     max-width: 500px;
-    height: 600px;
+    height: 571px;
   }
 
   .contact-img img {
     max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 0px 10px 10px 0px;
   }
 
   .contact-container {
-    margin: 60px auto;
+    margin: 60px 0px 0px 0px auto;
     max-width: 1500px;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -679,5 +693,9 @@ footer {
 @media screen and (max-width: 400px) {
   .btn-about-us {
     width: 100%;
+  }
+
+  .footer_links {
+    gap: 15px;
   }
 }
