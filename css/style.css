@@ -288,20 +288,23 @@ main {
   margin-bottom: 30px;
 }
 
-.tours-card h2 {
+.tours-card h2,
+.tours-long-hikes h2 {
   margin-bottom: 0px;
+  font-size: 27px;
 }
 
 .cards-hikes {
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
   display: grid;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .tours-card-container,
-.short-long-hikes {
-  max-width: 1200px;
+.short-long-hikes,
+#short h2 {
+  max-width: 1320px;
   margin: 0 auto;
 }
 
