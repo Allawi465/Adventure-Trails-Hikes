@@ -7,7 +7,7 @@ This project was to crate a responsive website for Adventure Trails Hikes a new 
 
 We provide supervised hikes, ranging from short day tours to weeklong treks with camping. 
 
-Our services are designed for college-educated professionals, both men and women, between the ages of 18 to 35.with the skills I learned over the first year of studies at Noroff.
+Our services are designed for college-educated professionals, both men and women, between the ages of 18 to 35.
 
 ## Built With
 
