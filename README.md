@@ -1,5 +1,5 @@
 # Adventure-Trails-Hikes
-![Skjermbilde (25)](https://user-images.githubusercontent.com/91701833/171228903-70573d41-22c4-4b96-873e-8997521c1cf3.png)
+![Skjermbilde (89)](https://github.com/Allawi465/Adventure-Trails-Hikes/assets/91701833/0b124528-e1d9-4f35-88a8-28844e038182)
 
 ## Description
 
